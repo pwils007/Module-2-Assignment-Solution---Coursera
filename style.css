@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+  }
+  
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .row {
+    width: 90%;
+    border: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    padding:5px;
+   }
+  
+  .menu-title{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .container{
+   position: relative;
+   top: 15px;
+   margin: 5px; 
+  }
+  
+  .item{
+    position: relative;
+    top: 0;
+    background-color:#b7b6b6;
+    margin: 10px;
+    padding: 25px;
+    border: 1px solid #000;
+  }
+  
+  .item p{
+    margin:5px;
+   	margin-top:15px;
+   	clear:both;
+      }
+   
+  .item-title{
+    position: absolute;
+    top:0;
+    right: 0px;
+    padding: 5px 50px;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+  }
+
+  #title-one {
+    background-color: #fdb8b8;
+  } 
+  
+  #title-two{
+    background-color: #e2504d;
+  }
+  
+  #title-three{
+    background-color: #fcc52e;
+  }
+  
+  /* Simple Responsive Framework.*/
+
+  /* Desktop */
+  @media (min-width: 992px) {
+    .col-lg-4 {
+        float: left;
+        width: 33.33%; /* Each column takes up one-third of 100% of the row */
+    }
+}
+
+  /*------ Tablet ------*/
+  @media (min-width: 768px) and (max-width: 991px){
+    .col-md-4 {
+      width: 50%; /*each column takes up 50% of 100% of the row*/
+      float: left;
+    }
+    .col-lg-tablet{
+     width: 100%; /*this column takes up 100% of the row*/
+     float: left;
+   }
+  }
+  
+  
+  /*------ Mobile ------*/
+  @media (max-width: 767px){
+    .col-sm-4{
+      width: 100%; /*each item nested under each other takes up 100% of the row*/
+      float: left;
+    }
+  }
